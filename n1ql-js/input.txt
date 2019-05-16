@@ -1,0 +1,27 @@
+function n1ql()
+{
+    var bucket='default';
+
+
+    for(var i of all)
+        log(i);
+
+    var up=
+        UPSERT INTO :bucket (key, value)
+        VALUES ("game", {"name":"lara croft tomb raider"})
+        WHERE text == `hello`
+        RETURNING *;
+	/*	var all=
+        SELECT *
+        FROM :bucket
+        LIMIT 10;
+	*/
+
+	var res=
+		SELECT *
+		FROM :bucket
+		LIMIT 10;
+
+	printf('select * from `beer-sample`');
+}
+n1ql();
